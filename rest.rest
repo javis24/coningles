@@ -1,11 +1,11 @@
-# Crear un usuario
-POST http://localhost:3000/api/users
+POST http://localhost:3000/api/users/
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "johndoe@example.com",
+  "name": "Rene Benavente",
+  "email": "rene@example.com",
   "password": "password123",
-  "role": "student",
-  "branch": "GomezPalacio"
+  "roleId": 1,
+  "branchId": 4
 }
+
