@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { User } from "../../models";
+import { User } from "../../../models";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {

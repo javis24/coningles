@@ -1,5 +1,5 @@
 import { User } from "../../models";
-import authMiddleware from "../../middleware/auth";
+import authMiddleware from "../../../middleware/auth";
 
 async function handler(req, res) {
   if (req.method === "GET") {

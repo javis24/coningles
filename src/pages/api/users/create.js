@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import { User, Role, Branch } from "../../models";
+import { User, Role, Branch } from "../../../models";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
