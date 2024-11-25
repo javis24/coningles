@@ -1,4 +1,4 @@
-import { User } from "../../models";
+import { User } from "../../../models";
 import authMiddleware from "../../../middleware/auth";
 
 async function handler(req, res) {
