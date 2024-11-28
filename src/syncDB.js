@@ -1,5 +1,5 @@
 import sequelize from "./config/database.js"; // Ruta a tu configuración de Sequelize
-import { User, Branch, Role } from "./models/index.js"; // Importa tus modelos
+import { User, Branch, Role, Appointment } from "./models/index.js"; // Importa tus modelos
 
 const syncDB = async () => {
   try {
@@ -10,7 +10,7 @@ const syncDB = async () => {
     console.log("Connection has been established successfully.");
 
     // Sincroniza los modelos con las tablas
-    await sequelize.sync({ alter: true }); // Usa { force: true } solo para recrear tablas desde cero
+    await sequelize.sync({ alter: true }); // Usa { force: true } si necesitas recrear las tablas desde cero
     console.log("All models were synchronized successfully.");
   } catch (error) {
     console.error("Unable to connect to the database:", error);
